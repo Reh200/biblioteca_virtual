@@ -1,0 +1,7 @@
+C:\Users\etec\Desktop\biblioteca_virtual\biblioteca_virtual\obj\Debug\net8.0\biblioteca_virtual.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\etec\Desktop\biblioteca_virtual\biblioteca_virtual\obj\Debug\net8.0\biblioteca_virtual.AssemblyInfoInputs.cache
+C:\Users\etec\Desktop\biblioteca_virtual\biblioteca_virtual\obj\Debug\net8.0\biblioteca_virtual.AssemblyInfo.cs
+C:\Users\etec\Desktop\biblioteca_virtual\biblioteca_virtual\obj\Debug\net8.0\biblioteca_virtual.csproj.CoreCompileInputs.cache
+C:\Users\etec\Desktop\biblioteca_virtual\biblioteca_virtual\obj\Debug\net8.0\biblioteca_virtual.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\etec\Desktop\biblioteca_virtual\biblioteca_virtual\obj\Debug\net8.0\biblioteca_virtual.RazorAssemblyInfo.cache
+C:\Users\etec\Desktop\biblioteca_virtual\biblioteca_virtual\obj\Debug\net8.0\biblioteca_virtual.RazorAssemblyInfo.cs

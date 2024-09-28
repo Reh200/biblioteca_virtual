@@ -1,0 +1,42 @@
+/*using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace biblioteca_virtual.Models
+{
+    [Table("Livro")]
+    public class Livro
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Id { get; set; }
+
+        [Required]
+        public int GeneroId { get; set; }
+
+        [ForeignKey("GeneroId")]
+        public Genero Genero { get; set; }
+
+        [Required(ErrorMessage = "Informe o título do livro")]
+        [StringLength(100, ErrorMessage = "O Título deve possuir no máximo 100 caracteres")]
+        public string Titulo { get; set; }
+
+        [StringLength(500)]
+        public string Descricao { get; set; }
+
+        [Required(ErrorMessage = "Informe o autor do livro")]
+        [StringLength(100, ErrorMessage = "O Nome do Autor deve possuir no máximo 100 caracteres")]
+        public string Autor { get; set; }
+
+        [Required]
+        [Column(TypeName = "int")]
+        public int Paginas { get; set; }
+
+        [StringLength(200)]
+        public string ImagemCapa { get; set; }
+
+        [Required]
+        [Column(TypeName = "decimal(10,2)")]
+        public decimal Preco { get; set; }
+    }
+}
+*/

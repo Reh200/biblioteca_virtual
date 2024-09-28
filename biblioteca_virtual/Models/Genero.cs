@@ -3,17 +3,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace biblioteca_virtual.Models
 {
-    [Table("Genero")]
+    [Table("Generos")]
     public class Genero
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int Id_genero { get; set; }  
 
-        [Required]
-        [StringLength(50)]
-        public string Nome { get; set; }
-
-        public ICollection<Livro> Livros { get; set; }
-    }
+        [Required(ErrorMessage = "Informe o nome")]
+        [StringLength(30, ErrorMessage = "O Nome deve possuir no máximo 30 caracteres")]
+        public string Nome_genero { get; set; }
+   }
 }
+

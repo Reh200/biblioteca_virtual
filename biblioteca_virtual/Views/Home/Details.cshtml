@@ -1,0 +1,35 @@
+@model biblioteca_virtual.ViewModels.DetailsVM
+@{
+    ViewData["Title"] = "Detalhes do Livro";
+}
+
+<div class="container text-dark">
+    <div class="row">
+        <div class="col text-center">
+            @if (Model.Anterior != null)
+            {
+                <a asp-action="Details" asp-route-id="@Model.Anterior.Id_livro" class="btn btn-lg btn-outline-primary">
+                    @Model.Anterior.Id_livro - @Model.Anterior.titulo
+                </a>
+            }
+        </div>
+        <div class="col text-center">
+            <h1 class="fs-1">@Model.Atual.titulo</h1>
+        </div>
+        <div class="col text-center">
+            @if (Model.Proximo != null)
+            {
+                <a asp-action="Details" asp-route-id="@Model.Proximo.Id_livro" class="btn btn-lg btn-outline-primary">
+                    @Model.Proximo.Id_livro - @Model.Proximo.titulo
+                </a>
+            }
+        </div>
+    </div>
+
+    <div class="row mt-5"> 
+        <div class="col-lg-7 fs-5 mt-4">
+            <p class="mb-3"><strong>Descrição:</strong> @Model.Atual.titulo</p>
+            <p class="mb-3"><strong>Gênero:</strong> @Model.Atual.titulo</p>
+        </div>
+    </div>
+</div>

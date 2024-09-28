@@ -4,7 +4,7 @@ using biblioteca_virtual.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Adiciona o DbContext e configura a ConnectionString para MySQL
-builder.Services.AddDbContext<SeuContexto>(options =>
+builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("BibliotecaDBConnection"),
         new MySqlServerVersion(new Version(8, 0, 23)) // Ajuste a versão do MySQL conforme necessário
